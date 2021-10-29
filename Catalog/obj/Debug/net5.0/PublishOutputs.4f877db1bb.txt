@@ -1,0 +1,10 @@
+/Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/publish/appsettings.Development.json
+/Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/publish/appsettings.json
+/Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/publish/Catalog.dll
+/Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/publish/Catalog.deps.json
+/Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/publish/Catalog.runtimeconfig.json
+/Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/publish/Catalog.pdb
+/Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/publish/Microsoft.OpenApi.dll
+/Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
