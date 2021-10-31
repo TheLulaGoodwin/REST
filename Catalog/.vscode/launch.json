@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Catalog/bin/Debug/net5.0/Catalog.dll",
+            "program": "${workspaceFolder}/bin/Debug/net5.0/Catalog.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Catalog",
+            "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
