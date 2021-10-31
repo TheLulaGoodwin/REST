@@ -79,7 +79,10 @@ namespace Catalog
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHealthChecks("/health");                
+
+                endpoints.MapHealthChecks("/health/ready", new HealthCheckOptons{
+                    Predicate = (check) => check.Tags.Contains("ready")
+                });                
             });
         }
     }
