@@ -82,3 +82,13 @@ C:/Users/cabos/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/runtimes/win/nativ
 /Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll
 /Users/caboose/Documents/GitHub/REST/Catalog/bin/Debug/net5.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 /Users/caboose/Documents/GitHub/REST/Catalog/obj/Debug/net5.0/Catalog.csproj.CopyComplete
+C:\Users\cabos\Documents\GitHub\REST\Catalog\obj\Debug\net5.0\Catalog.csproj.AssemblyReference.cache
+C:\Users\cabos\Documents\GitHub\REST\Catalog\obj\Debug\net5.0\Catalog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cabos\Documents\GitHub\REST\Catalog\obj\Debug\net5.0\Catalog.AssemblyInfoInputs.cache
+C:\Users\cabos\Documents\GitHub\REST\Catalog\obj\Debug\net5.0\Catalog.AssemblyInfo.cs
+C:\Users\cabos\Documents\GitHub\REST\Catalog\obj\Debug\net5.0\Catalog.csproj.CoreCompileInputs.cache
+C:\Users\cabos\Documents\GitHub\REST\Catalog\obj\Debug\net5.0\Catalog.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\cabos\Documents\GitHub\REST\Catalog\obj\Debug\net5.0\Catalog.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cabos\Documents\GitHub\REST\Catalog\obj\Debug\net5.0\Catalog.dll
+C:\Users\cabos\Documents\GitHub\REST\Catalog\obj\Debug\net5.0\ref\Catalog.dll
+C:\Users\cabos\Documents\GitHub\REST\Catalog\obj\Debug\net5.0\Catalog.pdb
