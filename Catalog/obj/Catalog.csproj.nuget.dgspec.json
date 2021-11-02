@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/caboose/Documents/GitHub/REST/Catalog/Catalog.csproj": {}
+    "/Users/lula/Documents/GitHub/REST/Catalog/Catalog.csproj": {}
   },
   "projects": {
-    "/Users/caboose/Documents/GitHub/REST/Catalog/Catalog.csproj": {
+    "/Users/lula/Documents/GitHub/REST/Catalog/Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/caboose/Documents/GitHub/REST/Catalog/Catalog.csproj",
+        "projectUniqueName": "/Users/lula/Documents/GitHub/REST/Catalog/Catalog.csproj",
         "projectName": "Catalog",
-        "projectPath": "/Users/caboose/Documents/GitHub/REST/Catalog/Catalog.csproj",
-        "packagesPath": "/Users/caboose/.nuget/packages/",
-        "outputPath": "/Users/caboose/Documents/GitHub/REST/Catalog/obj/",
+        "projectPath": "/Users/lula/Documents/GitHub/REST/Catalog/Catalog.csproj",
+        "packagesPath": "/Users/lula/.nuget/packages/",
+        "outputPath": "/Users/lula/Documents/GitHub/REST/Catalog/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/caboose/.nuget/NuGet/NuGet.Config"
+          "/Users/lula/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
