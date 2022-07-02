@@ -73,9 +73,7 @@ public class ItemsControllerTests
             var result = await controller.GetItemAsync(Guid.NewGuid());
 
         // Assert
-        result.Value.Should().BeEquivalentTo(
-            expectedItem,
-            options => options.ComparingByMembers<Item>());
+        result.Value.Should().BeEquivalentTo(expectedItem);
     }
 
     [Fact]
@@ -93,20 +91,44 @@ public class ItemsControllerTests
         var actualItems = await controller.GetItemsAsync();
 
         // Assert
-        actualItems.Should().BeEquivalentTo(
-            expectedItems,
-            options => options.ComparingByMembers<Item>());
+        actualItems.Should().BeEquivalentTo(expectedItems);
+    }
+
+    [Fact]
+    public async Task GetItemAsync_WithMatchingItems_ReturnsMatchingItems()
+    {
+        // Arrange
+        var allItems = new[]
+            { 
+            new Item(){ Name = "Potion"},
+            new Item(){ Name = "Antidote"},
+            new Item(){ Name = "Hi-Potion"}
+            };
+
+        var nameToMatch = "Potion";
+
+        repositoryStub.Setup(repo => repo.GetItemsAsync())
+            .ReturnsAsync(allItems);
+
+        var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
+
+        // Act
+        IEnumerable<ItemDto> foundItems = await controller.GetItemsAsync(nameToMatch);
+
+        // Assert
+        foundItems.Should().OnlyContain(
+            item => item.Name == allItems[0].Name || item.Name == allItems[2].Name
+            );
     }
 
      [Fact]
     public async Task CreateItemAsync_WithItemToCreate_ReturnsCreatedItem()
     {
         // Arrange
-        var itemToCreate = new CreateItemDto()
-        {
-            Name = Guid.NewGuid().ToString(),
-            Price = rand.Next(1000),
-        };
+        var itemToCreate = new CreateItemDto(
+            Guid.NewGuid().ToString(),
+            Guid.NewGuid().ToString(),
+            rand.Next(1000));
         
         var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
 
@@ -132,11 +154,11 @@ public class ItemsControllerTests
             .ReturnsAsync(existingItem);
 
         var itemId =existingItem.Id;
-        var itemToUpdate = new UpdateItemDto() 
-        {
-            Name = Guid.NewGuid().ToString(),
-            Price = existingItem.Price + 3
-        };
+        var itemToUpdate = new UpdateItemDto(
+            Guid.NewGuid().ToString(),
+            Guid.NewGuid().ToString(),
+            existingItem.Price + 3
+            ); 
         
         var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
 
