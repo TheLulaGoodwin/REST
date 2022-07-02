@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pxSCel+vouzhOmi55PygGNM7lHQ/MsSYl7MJ4Uhtg3xUBlZ/tZUqB7owhedJH5H41cm3WxDDcY/7a0jIQLkDEw==",
+  "dgSpecHash": "puv1TcO5dwqkcOssVRGn5BWkKa0B56lv6wUpmT5wwc29/jbYeId2z3nLlW/0j8aovrj5DYr0TW2n0GKV7/iSbg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cabos\\.nuget\\packages\\aspnetcore.healthchecks.mongodb\\6.0.2\\aspnetcore.healthchecks.mongodb.6.0.2.nupkg.sha512",
     "C:\\Users\\cabos\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",

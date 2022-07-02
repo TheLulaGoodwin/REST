@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/jj/F4kTtH5mcKSBaIo+Fr+gQYrT5FAW7hcjrPCSChIxaog4v6dUrRj413PVlwNoqFREUH/PAVQ8q9d+XJIv3A==",
+  "dgSpecHash": "3DV61e0vTBa5UvfUePCUZaNaBWihUPVrxyjj0GcQ0Z1Aobs9mXTLOREx1KVfB0DEbaRbRFmJPfWZHgo4/aZ+TQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
+  "projectFilePath": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cabos\\.nuget\\packages\\aspnetcore.healthchecks.mongodb\\6.0.2\\aspnetcore.healthchecks.mongodb.6.0.2.nupkg.sha512",
     "C:\\Users\\cabos\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",

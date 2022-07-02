@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\build.proj": {}
+  },
+  "projects": {
+    "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\build.proj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\build.proj",
+        "projectName": "build",
+        "projectPath": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\build.proj",
+        "packagesPath": "C:\\Users\\cabos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\cabos\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

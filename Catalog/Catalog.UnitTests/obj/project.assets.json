@@ -7380,11 +7380,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
       "projectName": "Catalog.UnitTests",
-      "projectPath": "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
+      "projectPath": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
       "packagesPath": "C:\\Users\\cabos\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cabos\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7399,8 +7399,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {
-              "projectPath": "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj"
+            "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {
+              "projectPath": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj"
             }
           }
         }

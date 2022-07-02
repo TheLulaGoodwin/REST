@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "wEsAN827nvyE7GpjA3LH3EJjif8DBbiaLESFqnoDggIPuVuh+fKG8Q93NeTzRCG5ez+S6DaSbXw0PrKejuVNiQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\build.proj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cabos\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\cabos\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net45\\1.0.2\\microsoft.netframework.referenceassemblies.net45.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
