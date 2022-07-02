@@ -1,7 +1,10 @@
 using System;
 using Catalog.Api.Controllers;
+using Catalog.Api.Dtos;
 using Catalog.Api.Entities;
 using Catalog.Api.Repositories;
+using FluentAssertions;
+using FluentAssertions.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
@@ -31,6 +34,7 @@ public class ItemsControllerTests
 
             // Assert
             Assert.IsType<NotFoundResult>(result.Result);
+            result.Result.Should().BeOfType<NotFoundResult>();
     }
 
     [Fact]
@@ -39,12 +43,62 @@ public class ItemsControllerTests
         // Arrange
         var expectedItem = CreateRandomItem();
 
+        repositoryStub.Setup(repo => repo.GetItemAsync(It.IsAny<Guid>()))
+            .ReturnsAsync(expectedItem);
         
+            var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
 
-        // Act
+            // Act
+            var result = await controller.GetItemAsync(Guid.NewGuid());
 
         // Assert
+        result.Value.Should().BeEquivalentTo(
+            expectedItem,
+            options => options.ComparingByMembers<Item>());
+    }
 
+    [Fact]
+    public async Task GetItemAsync_WithExistingItem_ReturnsAllItems()
+    {
+        // Arrange
+        var expectedItems = new[]{ CreateRandomItem(), CreateRandomItem(), CreateRandomItem() };
+
+        repositoryStub.Setup(repo => repo.GetItemsAsync())
+            .ReturnsAsync(expectedItems);
+
+        var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
+
+        // Act
+        var actualItems = await controller.GetItemsAsync();
+
+        // Assert
+        actualItems.Should().BeEquivalentTo(
+            expectedItems,
+            options => options.ComparingByMembers<Item>());
+    }
+
+     [Fact]
+    public async Task CreateItemAsync_WithItemToCreate_ReturnsCreatedItem()
+    {
+        // Arrange
+        var itemToCreate = new CreateItemDto()
+        {
+            Name = Guid.NewGuid().ToString(),
+            Price = rand.Next(1000),
+        };
+        
+        var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
+
+        // Act
+        var result = await controller.CreateItemAsync(itemToCreate);
+        // Assert
+        var createdItem = (result.Result as CreatedAtActionResult).Value as ItemDto;
+        itemToCreate.Should().BeEquivalentTo(
+            createdItem,
+            options => options.ComparingByMembers<ItemDto>().ExcludingMissingMembers()
+        );
+        createdItem.Id.Should().NotBeEmpty();
+        createdItem.CreatedDate.Should().BeCloseTo(DateTimeOffset.UtcNow, 1000.Milliseconds());
     }
 
     private Item CreateRandomItem()

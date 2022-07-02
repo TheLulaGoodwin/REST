@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {}
+    "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {
+    "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
+        "projectUniqueName": "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
         "projectName": "Catalog.Api",
-        "projectPath": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
+        "projectPath": "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
         "packagesPath": "C:\\Users\\cabos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\obj\\",
+        "outputPath": "c:\\Users\\cabos\\Documents\\GitHub\\REST\\Catalog\\Catalog.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cabos\\AppData\\Roaming\\NuGet\\NuGet.Config"
