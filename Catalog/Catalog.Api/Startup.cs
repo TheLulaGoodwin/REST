@@ -39,9 +39,10 @@ namespace Catalog.Api
             BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
             BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
             var mongoDbSettings = Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
-
+            
             services.AddSingleton<IMongoClient>(ServiceProvider => 
             {
+                
                 return new MongoClient(mongoDbSettings.ConnectionString);
             });
 
